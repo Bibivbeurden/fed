@@ -1,0 +1,366 @@
+  *{
+      margin:0;
+      padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+
+/*   Zodat 1rem 10px is en geen 16px  */
+    font-size: 62.5%;
+  }
+  
+  
+  nav {
+    position: fixed;
+    
+    width: 100%;
+    height: 6rem;
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(228 228 228) 0px 3px 3px;
+  
+    background-color: white;
+  }
+  
+  nav button {
+  z-index: 99;
+  position: absolute;
+  background-color: transparent;
+  border:none;
+  left: 2rem;
+    
+    font-size: 2rem;
+  }
+  
+  nav ul { 
+    margin:0; 
+    padding:4em 1em 0;
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1em;
+    padding-top: 10%;
+    flex-direction: column;
+    align-content:start;
+    background:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+    
+  
+    position: fixed;
+    left: 0rem;
+    right: 20rem;
+    top:0;
+    bottom:0;
+
+
+    transform:translatex(-100%);
+    
+    transition:transform .3s;
+  }
+
+  nav a{
+      text-decoration: none;
+      font-family: sans-serif;
+      font-size: 1rem;
+      color: black;
+  }
+  
+  
+  /* als menu open is */
+  nav ul.toonMenu  {
+    /* JOUW CODE HIER - stap 4 */
+    transform:translatex(0);
+  }
+
+  nav a figure img {
+    height: 3rem;
+  }
+  
+  .buttonin{
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: black;
+    border: solid green;
+    margin-left: 42px;
+    margin-bottom: 10%;
+  }
+  
+  header {
+    padding-top: 6rem;
+    
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url('./images/homefoto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header h1 {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+  }
+  
+  header p {
+    padding-bottom: 2rem;
+    font-family: sans-serif;
+    font-style: italic;
+    width: 35rem;
+    
+    font-size: 2.5em;
+    
+    text-align: center;
+  }
+  
+  header a {
+    padding: 1.5rem 3rem;
+    font-family: sans-serif;
+    text-decoration:none;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    background: radial-gradient(circle at top left, #8ed704 0%, #8fcf03 100%);
+  }
+
+hr{
+    border-width: 0.5px;
+}
+
+main section:nth-of-type(1) {
+    width: 100%;
+}
+
+main .caroussel {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+
+    gap: 5rem;
+}
+
+main section:nth-of-type(1) article {
+    height: auto;
+    min-width: 70%;   
+
+}
+
+main section:nth-of-type(1) article figure{
+    width: 100%;
+}
+
+main section:nth-of-type(1) article img{
+    width: 100%;
+    height: auto;
+    padding-top: 40%;
+}
+  
+main section:nth-of-type(1){
+display: flex;
+
+overflow: scroll;
+
+}
+
+main section:nth-of-type(2) section {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+
+main section:nth-of-type(2){
+width: 100%;
+display: flex;
+flex-direction: column;
+
+}
+
+main section:nth-of-type(2) section:nth-of-type(1){
+  width: 100%;
+}
+
+main section:nth-of-type(2) section:nth-of-type(1) article {
+  padding: 2rem;
+}
+
+main section:nth-of-type(2) section:nth-of-type(1) article h1{
+font-size: 2.4rem;
+padding-bottom: 2rem;
+}
+
+main section:nth-of-type(2) section:nth-of-type(2){
+  padding-bottom: 2rem;
+  width: 100%;
+  gap: 2rem;
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) article{
+  padding: 0
+  display flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) article img{
+  padding-bottom: 2rem;
+}
+
+main section:nth-of-type(2) article h3{
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+main > section:nth-of-type(3){
+  background-color:rgba(219, 217, 217, 0.493)
+}
+
+
+
+
+main h1{
+   
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+main h2 {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+main p{
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: center;
+   
+}
+
+main button{
+  
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: black;
+    border: solid green;
+}
+
+img{
+    width: 100%;
+    
+}
+
+.imgfoo{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    padding-top: 10%;
+}
+
+main section:nth-of-type(4){
+  background-image: url('./images/footer2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section:nth-of-type(4) article{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+main section:nth-of-type(4) article h1 {
+  font-size: 3.2rem;
+  
+}
+main section:nth-of-type(4) article a {
+  padding: 1.2rem 3.6rem;
+  font-family: sans-serif;
+  text-decoration:none;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  background: radial-gradient(circle at top left, #8ed704 0%, #8fcf03 100%);
+}
+
+
+footer img{
+
+  padding-top: 6rem;
+    
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p{
+    padding-bottom: 2rem;
+    font-family: sans-serif;
+    font-style: italic;
+    width: 35rem;
+    
+    font-size: 2.5em;
+    
+    text-align: center;
+  }
+
+
+footer section a{
+  padding: 1.5rem 3rem;
+  margin: 111px;
+  font-family: sans-serif;
+  text-decoration:none;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  background: radial-gradient(circle at top left, #8ed704 0%, #8fcf03 100%);
+}
