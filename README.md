@@ -120,7 +120,7 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  In week 2 hadden we de eerste voortgang gesprek. Ik kwam hier vooral met vragen over mijn menu en hiermee heeft student assistent mij mee geholpen. We hadden niet genoeg tijd hiervoor en ging uiteindelijk zelf verder met mijn vordering van mijn website van Hello Fresh. Ik merkte dat ik alles weer een beetje op moest halen na zon lange vakantie maar gelukkig konden de mensen die daar waren mij verder helpen.
 
 
   ### Agenda voor meeting
@@ -136,10 +136,10 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Menu stijlen 
+  - Eerste codes laten checken
+  - Semantische code gebruik
+
 
 </details>
 
@@ -153,7 +153,7 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier was mijn site al verder en was mijn menu gelukt! Wel had ik vragen over een scrollbar en heb ik dit gevraagd. Ook heb ik gevraagd om verschillende manieren van styling. Hier konden ze mij goed mee helpen.
 
 
   ### Agenda voor meeting
@@ -169,10 +169,10 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - scrollbar
+  - Semantische code
+  - Vragen
+
 
 </details>
 
@@ -186,32 +186,22 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Ik kwam erachter dat mijn website redelijk toegangelijk is. Hij komt bij alle buttons en maar niet bij de h1&h2 en die slaat die over.
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Mijn website ging goed met screenreaders. Hij ging over bijna alle content. Het is dus toegeangelijk voor mensen met een beperking. ik merkte in de vorige testen dat dit niet kon bij de hello fresh site. Ik heb dit wederom opgelost.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Ik merk dat dit een groot opstakel was bij andere sites. Wederom heb ik er voor gezorgd dat je makkelijk met tap en enter over de site te gaan is. Je komt bijna overal behalve op sommige content. Maar de belangerijkste dingen zijn zichtbaar en klikbaar.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Er moet een goede site worden gemaakt die ook goed is voor mensen met deze beperking. Je moet overal heen kunnen zonder dat je de muis hoeft te gebruiken, zowel het hoofdmenu.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Ik kon met de elastiekjes moeilijk scrollen met de muis. Ook heb ik de schock gebruikt en dit voelde naar. Dit is echt een beperking wat lastig is om de website te
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Ik kon met de elastiekjes moeilijk scrollen met de muis. Ook heb ik de schock gebruikt en dit voelde naar. Dit is echt een beperking wat lastig is om de website. Dit is over het algemeen em ligt niet aan mijn website. 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Voor de visueele oefening heb ik blur gebruikt als beperking. Het is moeilijk om de website te visualiseren, het word een beetje wazig. Maar voor de rest is de website nog goed bestuurbaar ook voor mensen met deze beperking.
 
 </details>
 
@@ -225,8 +215,7 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  In de laatste week heb ik mij vooral gefocust over de laatste vragen die ik had over mijn site om verder te gaan en af te ronden. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -239,12 +228,12 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  -   Laatste vragen
+  -   Vragen of de codes goed staan
+  -   Vragen over foutmelding
+
 
 </details>
 
@@ -262,13 +251,21 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik merkte dat het coderen mij in de eerste weken best mooeilijk af ging. Wel heb ik gebruik gemaakt van de student assisenten en heb ik met een medeklasgenoot afgesproken,vaak na school. Zo konden we vragen stellen en elkaar helpen. In het verloop had ik er best lol in en merkte dat ik het best leuk 
+  begin te vinden. Het kost veel moeite met vallen en opstaan, maar ondanks dat ben ik wel echt trots op het einde resultaat. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik vond het best een uitdaging om de officele website na te maken maar dan met een betere semantische code. Ik vond het eerst erg spannend. Het ging vooral om de pagina met de verschillende recepten. Daar moest je gebruik maken van grid en toen ik dat voor het eerste hoorde dacht ik echt van "hoe ga ik dit doen".En ik dacht dat dit mij niet ging lukken. Dus ben trots op het feit dat mijn site staat en dat het gelukt is met grid.
+
+  Ik heb weer meer geleerd over de html en css en merkte dat het echt veel handiger is om CSS propeties te gebruiken. Zo scheelt het heel wat typ werk. Dit ga ik zeker in het vervolg gebruiken.
+
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik gaf al bij mij top aan dat ik trots was op mijn site en dat het uiteindelijk allemaal is gelukt. Als je echt gaat kijken dan had ik nog wel bij de recepten 
+  mijn grid willen uitwerken. Op de officiele site is dan ook te zien dat je verschillende recepten hebt in verschillende grotes. Dit is mij helaas niet gelukt het staat er alsnog mooi maar als ik meer tijd had gehad, had ik mij hier zeker in verdiept.
+
+  Als ik sowieso meer tijd had gehad, had ik meerdere dingen toegevoegd maar die tijd was er niet altijd.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -282,10 +279,6 @@ Vandaag hebben we een hoorcollege gehad over verschillende dingen. Over het alge
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-  1. bron 1
-  2. bron 2
-  3. ...
+ Mijn Bronnenlijst is te vinden bij de codes. Staat netjes bij wat ik waar vandaan heb met de juiste link.
 
 </details>

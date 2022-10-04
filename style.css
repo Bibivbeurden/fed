@@ -1,0 +1,771 @@
+ *:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: 1px solid red;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/*/Fonts/Agrandir-Regular.woff2  */
+@font-face {
+  font-family: "Agrandir";
+  src: url("/Fonts/Agrandir-Regular.woff2") format("woff2"), url("/Fonts/Agrandir-Regular.woff")
+      format("woff");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+ 
+  html, body {
+    height: 100%;
+
+    font-size: 62.5%; /*   Zodat 1rem 10px is en geen 16px  */
+    -webkit-font-smoothing: antialiased;
+  }
+
+/* informatie DLO */
+:root{
+  --primary-font-family: 'Agrandir', sans-serif;
+  --primary-text-color: #000000;
+  --primary-btn-bg-color: radial-gradient(circle at top left, #8ed704 0%, #8fcf03 100%);
+  --p-font-size: 1.4rem;
+  --h1-font-size: 3.5rem;
+}
+
+
+  
+  
+  
+  /* *************** */
+  /* *  Navigatie  * */
+  /* *************** */
+
+body > nav {
+    z-index: 99;
+
+    position: fixed;
+    
+    width: 100%;
+    height: 6rem;
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(228 228 228) 0px 3px 3px;
+  
+    background-color: white;
+  }
+  
+  /* Hamburger Menu Knop */
+body > nav button {
+  z-index: 99;
+
+  position: absolute;
+  background-color: transparent;
+  border:none;
+  left: 2rem;
+    
+  font-size: 2rem;
+  }
+  
+  /* Hamburger Menu */
+body > nav ul { 
+    padding-top: 8rem;
+
+    position: fixed;
+    left: 0; right: 0; top:0; bottom:0;
+
+    display:flex;
+    flex-direction: column;
+    
+    width: 25rem;
+
+    background:white;
+    
+    transform:translatex(-100%);
+    transition:transform .3s;
+  }
+
+  /* Menu uitklappen */
+body > nav ul.toonMenu  {
+    transform:translatex(0);
+  }
+
+body >  nav ul li{
+    display: flex;
+    width: 100%;
+  }
+
+  /* Hamburger Menu Links */
+body >  nav ul li a {
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 1.5rem;
+
+    width: 100%;
+    height: 6rem;
+
+    font-size: 16px;
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+
+    text-decoration: none;
+  }
+
+  /* Lijn onder Link "Hulp nodig en Duurzaamheid" */
+body > nav ul li:nth-of-type(5), nav ul li:nth-of-type(9) {
+    border-bottom: 0.1rem solid #e7e7e7;
+  }
+
+  /* Grootte van iconen */
+body > nav ul li a img {
+    width: 2rem;
+  }
+
+  /* Standaard hover links hamburger menu */
+body > nav ul li a:hover{
+    font-weight: 600;
+    background: linear-gradient(90deg, #8ed704 0%, #8ed704 2%, #e7e7e7 2%, #e7e7e7 100%);
+  }
+
+
+  /* Hamburger menu Log in Knop */
+body > nav ul li:first-of-type {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+
+body > nav ul li:first-of-type a {
+    padding: 0rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 85%;
+    height: 4rem;
+
+    color: #acacac;
+
+    border: 0.1rem solid #acacac;
+    border-radius: 0.5rem;
+
+    text-decoration: none;
+  }
+
+body >  nav ul li:first-of-type a:hover {
+    border: 0.1rem solid #212121;
+
+    color: var(--primary-text-color);
+    background: #e7e7e7;
+  }
+
+  /* Logo */
+body >  nav a figure img {
+    height: 3rem;
+  }
+  
+
+  /* *************** */
+  /* *   Header    * */
+  /* *************** */
+
+  header {
+    padding-top: 6rem;
+    
+    width: 100%;
+    height: 65%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url('./images/homefoto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header h1 {
+    padding-bottom: 1.5rem;
+
+    font-size: var(--h1-font-size);
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+  }
+  
+  header p {
+    padding-bottom: 2rem;
+
+    font-family: var(--primary-font-family);
+    font-size: var(--p-font-size);
+    font-style: italic;
+
+    text-align: center;
+
+    width: 35rem;
+  }
+  
+  header a {
+    padding:  1.5rem 1rem;
+
+    font-family:var(--primary-font-family);
+    font-size: 1.6rem;
+
+    text-decoration:none;
+
+    border-radius: 1rem;
+
+    color: white;
+    background: var(--primary-btn-bg-color);
+  }
+
+
+  /* ****************** */
+  /* *  Zo werkt het  * */
+  /* ****************** */
+
+.home section:nth-of-type(1) {
+  padding: 6rem 0;
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 100%;
+  
+  text-align: center;
+  overflow: hidden;
+
+  border-bottom: 0.1rem solid #e7e7e7;
+}
+
+/* Titel boven de carousel. */
+.home > section:nth-of-type(1) h1 {
+  padding-bottom: 2rem;
+  
+  font-size: 2rem;
+}
+
+
+/* Container van de carousel. */
+.home section:nth-of-type(1) > .caroussel {
+  padding: 0 4rem 4rem 4rem;
+  
+  overflow-x: scroll;
+  
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth; /* Voor het scroll effect, normaal springt het. */
+  
+  -ms-overflow-style: none;  /* Scrollbar verbergen op IE and Edge */
+  scrollbar-width: none;  /* Scrollbar verbegen op Firefox */
+  
+  display: flex;
+
+  width: 100%;
+  height: auto;
+}
+
+.home section:nth-of-type(1) .caroussel::-webkit-scrollbar { /* Scrollbar verbergen op Chrome, Safari and Opera */
+  display: none;
+}
+
+/* Inhoud van de carousel. */
+.home section:nth-of-type(1) .caroussel article {
+  padding: 0 4rem; 
+  
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; /* Zodat de inhoud niet krimpt. */
+  
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container afbeelding carousel. */
+.home section:nth-of-type(1) .caroussel article figure {
+  padding-bottom: 3rem;
+  position: relative;
+  
+  width: 100%;
+}
+
+.home section:nth-of-type(1) .caroussel article figure img {
+  object-fit: cover;
+
+  width: 90%;
+  height: 100%;
+}
+
+.home section:nth-of-type(1) .caroussel article p {
+  font-size: var(--p-font-size);
+  max-width: 35rem;
+}
+
+/*  Navigatie van de carousel. */
+.home section > nav {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+  
+  gap: 2rem;
+  
+  width: 100%;
+}
+
+
+.home section > nav a {
+  display: inline-flex;
+  
+  justify-content: center;
+  align-items: center;
+  
+  width: 2rem;
+  height: 2rem;
+  
+  border-radius: 50%;
+  background: #06af0e;
+}
+
+
+.home section:nth-of-type(2){
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  }
+
+  .home section:nth-of-type(2) section {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.home section:nth-of-type(2) section:nth-of-type(1){
+  width: 100%;
+}
+
+.home section:nth-of-type(2) section:nth-of-type(1) article {
+  padding: 2rem;
+}
+
+.home section:nth-of-type(2) section:nth-of-type(1) article h1{
+font-size: 2.4rem;
+padding-bottom: 2rem;
+font-family:var(--primary-font-family);
+
+}
+
+.home section:nth-of-type(2) section:nth-of-type(2){
+  padding-bottom: 2rem;
+  width: 100%;
+  gap: 2rem;
+}
+
+.home section:nth-of-type(2) section:nth-of-type(2) article{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.home section:nth-of-type(2) section:nth-of-type(2) article img{
+  padding-bottom: 2rem;
+}
+
+.home section:nth-of-type(2) article h3{
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  font-family:var(--primary-font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home > section:nth-of-type(3){
+  background-color:#06af0e21;
+}
+
+
+
+
+.home h1{
+    font-size: var(--h1-font-size);
+    font-family: var(--primary-font-family);
+    text-align: center;
+}
+
+
+.home h2 {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.home p{
+    font-size: var(--p-font-size);
+    font-family: var(--primary-font-family);
+    text-align: center;
+   
+}
+
+.home section:nth-of-type(2) a {
+  padding: 0.5rem 1rem;
+  font-family: var(--primary-font-family);
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  background: transparent;
+  color:#8ed704;
+  border: solid#8ed704;
+}
+.home button{
+  
+    padding: 0.5rem 1rem;
+    font-family: var(--primary-font-family);
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background: transparent;
+    color:#8ed704;
+    border: solid#8ed704;
+    
+}
+
+.home section:nth-of-type(2) article img{
+    width: 60%;
+    
+}
+
+
+.home .imgfoo{
+    height: auto;
+    object-fit: cover;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home section:nth-of-type(3) article h3{
+font-size: 2rem;
+font-family:var(--primary-font-family);
+font-weight: 600;
+text-align: left;
+padding-left: 1rem;
+}
+
+.home section:nth-of-type(3) article h2{
+  font-family: var(--primary-font-family);
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-top: 5%;
+  padding-left: 1rem;
+}
+
+.home section:nth-of-type(3) article p{
+  font-family: var(--primary-font-family);
+  font-size: var(--p-font-size);
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  padding-left: 1rem;
+  padding-bottom: 5%;
+}
+
+.home section:nth-of-type(3) a{
+  padding: 1.2rem 3.6rem;
+    font-family: var(--primary-font-family);
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    background: var(--primary-btn-bg-color);
+}
+.home section:nth-of-type(3){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home section:nth-of-type(3) figure{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *************** */
+  /* *   Footer    * */
+  /* *************** */
+
+.home section:nth-of-type(4){
+  background-image: url('./images/footer2.jpg');
+  margin-top: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home section:nth-of-type(4) article{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.home section:nth-of-type(4) article h1 {
+  font-size:var(--h1-font-size);
+  font-family:var(--primary-font-family);
+  font-weight: 500;
+  
+}
+.home section:nth-of-type(4) article a {
+  padding: 1.2rem 3.6rem;
+  font-family: var(--primary-font-family);
+  text-decoration:none;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  background: var(--primary-btn-bg-color);
+}
+
+
+footer img{
+
+  padding-top: 6rem;
+    
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p{
+    padding-bottom: 2rem;
+    font-family: var(--primary-font-family);
+    font-style: italic;
+    width: 35rem;
+    
+    font-size: var(--p-font-size);
+    
+    text-align: center;
+  }
+
+  
+footer section{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 1em;
+  gap: 1em;
+  margin-top: 5%;
+  }
+
+footer ul{
+  list-style: none;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 2em;
+}
+
+.buttonfooter{
+  padding: 1.2rem 3.6rem;
+  font-family: var(--primary-font-family);
+  text-decoration:none;
+  color: #8ed704;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border:#8ed704 1px solid; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
+footer h2{
+    font-size: 3em;
+    text-align: left;
+    }
+  
+  details > summary {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  details > summary::after {
+    content: "<";
+    color: #8ed704;
+    margin-left: auto;
+  }
+  
+  details[open] > summary::after {
+    transform: rotate(180deg);
+  }
+
+/* *************** */
+  /* *   Tweede HTML pagina/ menu.html    * */
+  /* *************** */
+
+
+  .headermenu{
+    background-image: none;
+    background-color: rgb(243, 240, 240);
+    height: 40%;
+  }
+
+
+
+  .titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+  }
+
+  .menu section:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(243, 240, 240); ;
+  }
+
+  .menu section:nth-of-type(1){
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .meunu section:nth-of-type(1) article:nth-of-type(4){
+    grid-area: 2 / span 2 / 4 / auto;
+  }
+
+  .menu section:nth-of-type(1) h3{
+        background-color:#ffffff;
+        box-shadow: rgb(228 228 228) 0px 3px 3px;
+        font-size: 2em;
+        padding-top: 2em;
+        font-family: var(--primary-font-family);
+        padding-left: 5%;
+        font-weight: 600;
+  }
+
+  
+
+  .menu section:nth-of-type(1) p{
+    background-color:#f9fcf3;
+    box-shadow: rgb(228 228 228) 0px 3px 3px;
+    padding-bottom: 2em;
+    font-size: var(--p-font-size);
+    font-family: var(--primary-font-family);
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+
+
+  .menu section:nth-of-type(2) a {
+    padding: 0.5rem 1rem;
+    font-family: var(--primary-font-family);
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background:var(--primary-btn-bg-color);
+    color:#ffffff;
+    border: solid#8ed704;
+  }
+  
+
+  .menu section:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+  @media only screen and (min-width: 50em) {
+
+    .home section:nth-of-type(2) section:nth-of-type(2) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .home section:nth-of-type(3){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
